@@ -4,14 +4,23 @@
 
 (function () {
 
-  /* ── 1. Load data ──────────────────────────────── */
-  let data;
-  try {
-    const saved = localStorage.getItem('portfolioData');
-    data = saved ? JSON.parse(saved) : window.portfolioData;
-  } catch (e) {
-    data = window.portfolioData;
-  }
+  /* ── 1. Load data from data.json (managed by Decap CMS) ── */
+  fetch('data.json', { cache: 'no-cache' })
+    .then(res => {
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return res.json();
+    })
+    .then(run)
+    .catch(err => {
+      document.getElementById('app').innerHTML =
+        '<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;' +
+        'font-family:sans-serif;color:#888;text-align:center;padding:2rem;">' +
+        '<div><h1 style="font-size:1.5rem;margin-bottom:.5rem;">Couldn’t load content</h1>' +
+        '<p>data.json failed to load (' + err.message + ').<br>' +
+        'If you opened this file directly, view it on your live site instead.</p></div></div>';
+    });
+
+  function run(data) {
 
   /* ── 2. Google Analytics ───────────────────────── */
   if (data.meta.analyticsId && data.meta.analyticsId !== 'G-XXXXXXXXXX') {
@@ -482,5 +491,7 @@
       cfSubmit.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
     });
   }
+
+  } /* end run(data) */
 
 })();
