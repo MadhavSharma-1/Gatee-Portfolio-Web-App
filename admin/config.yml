@@ -2,7 +2,7 @@ backend:
   name: github
   repo: MadhavSharma-1/Gatee-Portfolio-Web-App
   branch: main
-  base_url: https://gatee-gala-portfolio.netlify.app
+  base_url: https://api.netlify.com
 
 media_folder: "images"
 public_folder: "/images"
