@@ -143,7 +143,7 @@ backend:
   name: github
   repo: MadhavSharma-1/Gatee-Portfolio-Web-App   # ← your repo (already correct)
   branch: main
-  base_url: https://YOUR-SITE.netlify.app          # ← EDIT: your Netlify URL
+  base_url: https://gatee-gala-portfolio.netlify.app/         # ← EDIT: your Netlify URL
   auth_endpoint: /.netlify/functions/auth
 
 media_folder: "images"
