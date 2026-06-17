@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Music Marketing</title>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       GOOGLE ANALYTICS
+       Replace G-XXXXXXXXXX with your Measurement ID from
+       https://analytics.google.com → Admin → Data Streams
+  ════════════════════════════════════════════════════════════ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── NAVIGATION ─────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">YN</a>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#brands">Brands</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+          <span class="theme-icon sun"><i class="fas fa-sun"></i></span>
+          <span class="theme-icon moon"><i class="fas fa-moon"></i></span>
+        </button>
+
+        <!-- CV Buttons -->
+        <a id="viewCV"
+           href="YOUR_GOOGLE_DRIVE_VIEW_LINK"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn btn-outline btn-sm">
+          <i class="fas fa-eye"></i> View CV
+        </a>
+        <a id="downloadCV"
+           href="YOUR_GOOGLE_DRIVE_DOWNLOAD_LINK"
+           download
+           class="btn btn-primary btn-sm">
+          <i class="fas fa-download"></i> Download CV
+        </a>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#achievements" class="mobile-link">Achievements</a></li>
+        <li><a href="#experience" class="mobile-link">Experience</a></li>
+        <li><a href="#brands" class="mobile-link">Brands</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+      <div class="mobile-cv">
+        <a href="YOUR_GOOGLE_DRIVE_VIEW_LINK" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+          <i class="fas fa-eye"></i> View CV
+        </a>
+        <a href="YOUR_GOOGLE_DRIVE_DOWNLOAD_LINK" download class="btn btn-primary btn-sm">
+          <i class="fas fa-download"></i> Download CV
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ─── HERO ────────────────────────────────────────────────── -->
+    <section id="hero">
+      <div class="hero-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-tag">
+          <i class="fas fa-music"></i>
+          Music Industry Marketing
+        </p>
+        <h1 class="hero-name">
+          <!-- ✏️  Replace with your full name -->
+          Your Full Name
+        </h1>
+        <p class="hero-title">
+          <!-- ✏️  Your headline / role -->
+          Marketing Strategist &amp; Brand Builder
+        </p>
+        <p class="hero-subtitle">
+          <!-- ✏️  One-line value proposition -->
+          Connecting artists and brands with audiences that matter.
+        </p>
+        <div class="hero-cta">
+          <a href="#brands" class="btn btn-primary btn-lg">See My Work</a>
+          <a href="#contact" class="btn btn-outline btn-lg">Get In Touch</a>
+        </div>
+        <div class="hero-scroll">
+          <span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ABOUT ────────────────────────────────────────────────── -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Who I Am</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-image-wrap">
+            <!-- ✏️  Replace src with your photo URL or relative path -->
+            <div class="about-image-placeholder">
+              <i class="fas fa-user"></i>
+              <p>Add your photo here</p>
+            </div>
+            <!-- Uncomment below and add your image path:
+            <img src="your-photo.jpg" alt="Your Name" class="about-image" />
+            -->
+            <div class="about-image-badge">
+              <!-- ✏️  Update year -->
+              <span class="badge-number">X+</span>
+              <span class="badge-text">Years in<br>Music</span>
+            </div>
+          </div>
+          <div class="about-text">
+            <h3 class="about-heading">
+              <!-- ✏️  Short punchy statement -->
+              Passionate about music, driven by data.
+            </h3>
+            <p>
+              <!-- ✏️  Paragraph 1 -->
+              Write a compelling introduction about yourself here. Tell recruiters who you are, what drives you, and why music marketing is your calling. Keep it genuine and energetic.
+            </p>
+            <p>
+              <!-- ✏️  Paragraph 2 -->
+              Add a second paragraph about your approach to marketing, your philosophy, or what makes you different from other candidates.
+            </p>
+            <div class="about-highlights">
+              <!-- ✏️  Update each highlight item -->
+              <div class="highlight-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Your City, Country</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Your Degree, University</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-language"></i>
+                <span>Languages you speak</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:your@email.com">your@email.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SKILLS ───────────────────────────────────────────────── -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">What I Do</span>
+          <h2 class="section-title">Skills</h2>
+        </div>
+        <div class="skills-grid">
+
+          <!-- ✏️  Skill Category Card — duplicate this block to add more -->
+          <div class="skill-card">
+            <div class="skill-card-icon">
+              <i class="fas fa-bullhorn"></i>
+            </div>
+            <h3>Marketing Strategy</h3>
+            <ul>
+              <li>Campaign Planning</li>
+              <li>Brand Positioning</li>
+              <li>Target Audience Research</li>
+              <li>Content Strategy</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Digital Marketing</h3>
+            <ul>
+              <li>Social Media Management</li>
+              <li>SEO / SEM</li>
+              <li>Email Campaigns</li>
+              <li>Analytics &amp; Reporting</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-icon">
+              <i class="fas fa-music"></i>
+            </div>
+            <h3>Music Industry</h3>
+            <ul>
+              <li>Artist Relations</li>
+              <li>Playlist Pitching</li>
+              <li>Label Coordination</li>
+              <li>Release Strategy</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-icon">
+              <i class="fas fa-palette"></i>
+            </div>
+            <h3>Creative</h3>
+            <ul>
+              <li>Copywriting</li>
+              <li>Visual Branding</li>
+              <li>Storytelling</li>
+              <li>Event Promotion</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3>Tools &amp; Platforms</h3>
+            <ul>
+              <li>Spotify for Artists</li>
+              <li>Meta Ads Manager</li>
+              <li>Google Analytics</li>
+              <li>Mailchimp / HubSpot</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3>Partnerships</h3>
+            <ul>
+              <li>Influencer Outreach</li>
+              <li>Brand Collaborations</li>
+              <li>PR &amp; Media</li>
+              <li>Sponsorship Deals</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Tag-style skills list -->
+        <div class="skills-tags-wrap">
+          <h3 class="skills-tags-title">Also proficient in</h3>
+          <div class="skills-tags">
+            <!-- ✏️  Add / remove tags as needed -->
+            <span class="tag">Adobe Photoshop</span>
+            <span class="tag">Canva</span>
+            <span class="tag">TikTok Marketing</span>
+            <span class="tag">YouTube Strategy</span>
+            <span class="tag">Spotify Pitch</span>
+            <span class="tag">Press Releases</span>
+            <span class="tag">A&amp;R Support</span>
+            <span class="tag">Data Analysis</span>
+            <span class="tag">Budgeting</span>
+            <span class="tag">Project Management</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── KEY ACHIEVEMENTS ─────────────────────────────────────── -->
+    <section id="achievements" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Track Record</span>
+          <h2 class="section-title">Key Achievements</h2>
+        </div>
+
+        <!-- Stats row -->
+        <div class="stats-row">
+          <!-- ✏️  Replace numbers and labels -->
+          <div class="stat-item">
+            <span class="stat-number" data-target="0">0</span>
+            <span class="stat-suffix">M+</span>
+            <span class="stat-label">Streams Generated</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="0">0</span>
+            <span class="stat-suffix">+</span>
+            <span class="stat-label">Campaigns Launched</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="0">0</span>
+            <span class="stat-suffix">+</span>
+            <span class="stat-label">Artists Worked With</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="0">0</span>
+            <span class="stat-suffix">+</span>
+            <span class="stat-label">Brands Partnered</span>
+          </div>
+        </div>
+
+        <!-- Achievement cards -->
+        <div class="achievements-grid">
+
+          <!-- ✏️  Achievement card — duplicate to add more -->
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="achievement-body">
+              <h3>Achievement Title Here</h3>
+              <p>Describe what you achieved, the scale of it, and why it matters. Use numbers wherever possible — e.g. grew social following by 150% in 3 months.</p>
+              <span class="achievement-tag">Campaign</span>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="achievement-body">
+              <h3>Achievement Title Here</h3>
+              <p>Describe a second key achievement. Keep it specific and impactful — recruiters respond to concrete results.</p>
+              <span class="achievement-tag">Strategy</span>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-fire"></i>
+            </div>
+            <div class="achievement-body">
+              <h3>Achievement Title Here</h3>
+              <p>Another achievement. Think about awards, viral moments, partnerships secured, revenue driven, or audiences grown.</p>
+              <span class="achievement-tag">Growth</span>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <div class="achievement-body">
+              <h3>Achievement Title Here</h3>
+              <p>Highlight a fourth achievement. Could be an academic award, a certification, or a project that went viral.</p>
+              <span class="achievement-tag">Analytics</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── EXPERIENCE ────────────────────────────────────────────── -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">My Journey</span>
+          <h2 class="section-title">Experience</h2>
+        </div>
+        <div class="timeline">
+
+          <!-- ✏️  Timeline item — duplicate to add more roles -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Job Title Here</h3>
+                  <span class="timeline-company">Company / Label Name</span>
+                </div>
+                <span class="timeline-date">Month Year – Month Year</span>
+              </div>
+              <p class="timeline-desc">
+                Describe your responsibilities and key contributions. What did you market? Who were the artists or brands? What results did you drive? Keep bullets punchy and specific.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Key responsibility or achievement</li>
+                <li>Key responsibility or achievement</li>
+                <li>Key responsibility or achievement</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Tag 1</span>
+                <span class="tag">Tag 2</span>
+                <span class="tag">Tag 3</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Job Title Here</h3>
+                  <span class="timeline-company">Company / Label Name</span>
+                </div>
+                <span class="timeline-date">Month Year – Month Year</span>
+              </div>
+              <p class="timeline-desc">
+                Describe this role's scope and impact. Mention specific artists, campaigns, or platforms you worked on.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Key responsibility or achievement</li>
+                <li>Key responsibility or achievement</li>
+                <li>Key responsibility or achievement</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Tag 1</span>
+                <span class="tag">Tag 2</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Job Title Here</h3>
+                  <span class="timeline-company">Company / Label Name</span>
+                </div>
+                <span class="timeline-date">Month Year – Month Year</span>
+              </div>
+              <p class="timeline-desc">
+                Add your earliest relevant role or internship here.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Key responsibility or achievement</li>
+                <li>Key responsibility or achievement</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Tag 1</span>
+                <span class="tag">Tag 2</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── BRANDS ────────────────────────────────────────────────── -->
+    <section id="brands" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Collaborations</span>
+          <h2 class="section-title">Brands I've Worked With</h2>
+          <p class="section-desc">A selection of labels, artists, and brands I've had the pleasure of partnering with.</p>
+        </div>
+        <div class="brands-grid">
+
+          <!--
+            ✏️  BRAND CARD — how to customise:
+            1. Replace "YOUR_IMAGE_URL_HERE" with a real image URL or relative path
+               e.g. src="images/sony-music.jpg"
+            2. Update the overlay text (brand name, role, description)
+            3. Duplicate the whole <div class="brand-card"> block for each brand
+          -->
+
+          <div class="brand-card" style="--brand-bg: url('YOUR_IMAGE_URL_HERE')">
+            <div class="brand-overlay">
+              <span class="brand-category">Record Label</span>
+              <h3 class="brand-name">Brand Name</h3>
+              <p class="brand-role">Your Role / Project</p>
+              <p class="brand-desc">Brief description of what you did for this brand — campaign type, results, scale.</p>
+              <a href="#" class="brand-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="brand-card" style="--brand-bg: url('YOUR_IMAGE_URL_HERE')">
+            <div class="brand-overlay">
+              <span class="brand-category">Artist</span>
+              <h3 class="brand-name">Brand Name</h3>
+              <p class="brand-role">Your Role / Project</p>
+              <p class="brand-desc">Brief description of what you did for this brand.</p>
+              <a href="#" class="brand-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="brand-card" style="--brand-bg: url('YOUR_IMAGE_URL_HERE')">
+            <div class="brand-overlay">
+              <span class="brand-category">Music Festival</span>
+              <h3 class="brand-name">Brand Name</h3>
+              <p class="brand-role">Your Role / Project</p>
+              <p class="brand-desc">Brief description of what you did for this brand.</p>
+              <a href="#" class="brand-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="brand-card" style="--brand-bg: url('YOUR_IMAGE_URL_HERE')">
+            <div class="brand-overlay">
+              <span class="brand-category">Streaming Platform</span>
+              <h3 class="brand-name">Brand Name</h3>
+              <p class="brand-role">Your Role / Project</p>
+              <p class="brand-desc">Brief description of what you did for this brand.</p>
+              <a href="#" class="brand-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="brand-card" style="--brand-bg: url('YOUR_IMAGE_URL_HERE')">
+            <div class="brand-overlay">
+              <span class="brand-category">Agency</span>
+              <h3 class="brand-name">Brand Name</h3>
+              <p class="brand-role">Your Role / Project</p>
+              <p class="brand-desc">Brief description of what you did for this brand.</p>
+              <a href="#" class="brand-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="brand-card" style="--brand-bg: url('YOUR_IMAGE_URL_HERE')">
+            <div class="brand-overlay">
+              <span class="brand-category">Brand Partnership</span>
+              <h3 class="brand-name">Brand Name</h3>
+              <p class="brand-role">Your Role / Project</p>
+              <p class="brand-desc">Brief description of what you did for this brand.</p>
+              <a href="#" class="brand-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONTACT ───────────────────────────────────────────────── -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Let's Talk</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-desc">Open to new opportunities, collaborations, and conversations about music marketing.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4>Email</h4>
+                <!-- ✏️  Replace with your email -->
+                <a href="mailto:your@email.com">your@email.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+              <div>
+                <h4>LinkedIn</h4>
+                <!-- ✏️  Replace with your LinkedIn URL -->
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourprofile</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+              <div>
+                <h4>Instagram</h4>
+                <!-- ✏️  Replace with your Instagram handle -->
+                <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">@yourhandle</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-file-pdf"></i></div>
+              <div>
+                <h4>CV</h4>
+                <div class="cv-buttons">
+                  <a href="YOUR_GOOGLE_DRIVE_VIEW_LINK" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                    <i class="fas fa-eye"></i> View
+                  </a>
+                  <a href="YOUR_GOOGLE_DRIVE_DOWNLOAD_LINK" download class="btn btn-primary btn-sm">
+                    <i class="fas fa-download"></i> Download
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <!-- ✏️  Replace YOUR_FORM_ID with your Formspree ID (free at formspree.io) -->
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me more…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <p class="form-note" id="formNote"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-name">
+        <!-- ✏️  Your name -->
+        Your Full Name
+      </p>
+      <p class="footer-tagline">Music Marketing · Brand Strategy · Artist Development</p>
+      <div class="footer-social">
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:your@email.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Your Full Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
